@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": false,
+    "commonjs": true,
+    "es6": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "indent": ["warn", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["warn", "never"],
+    "no-console": "off",
+    "comma-dangle": ["error", {
+        "arrays": "always",
+        "objects": "always",
+        "imports": "always",
+        "exports": "always",
+        "functions": "never"
+    }]
+  },
+  "globals": {
+    "next": false,
+    "__dirname": false,
+    "test": false,
+    "describe": false,
+    "it": false,
+    "expect": false,
+    "console": false
+  }
+}
