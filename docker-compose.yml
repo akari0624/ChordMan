@@ -1,0 +1,15 @@
+version: "3"
+services: 
+  bot:
+    image: "node:current-alpine"
+    ports: 
+      - '3001:3001'
+    volumes: 
+      - /var/bot/chrodman
+    command: 
+      - apk add --update --no-cache git yarn
+      - git clone https://github.com/akari0624/ChordMan.git
+      - cd ChordMan
+      - yarn install
+      - npm install forever -g
+      - forever start -c "yarn run start" ./
