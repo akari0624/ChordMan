@@ -7,7 +7,7 @@ services:
     volumes: 
       - /var/bot/chrodman
     command: 
-      - yum install git yarn
+      - apk add --update --no-cache git yarn
       - git clone https://github.com/akari0624/ChordMan.git
       - cd ChordMan
       - yarn install
