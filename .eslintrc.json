@@ -32,6 +32,7 @@
     "describe": false,
     "it": false,
     "expect": false,
-    "console": false
+    "console": false,
+    "process": false
   }
 }

@@ -1,6 +1,9 @@
 const Discord = require('discord.js')
-const TOKEN = require('./token').token
 const { doTransWork } = require('./utils')
+require('dotenv').config
+
+const TOKEN = process.env.TOKEN
+
 const client = new Discord.Client()
 
 const DM_startWith = '_cm'
